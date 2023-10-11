@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Полезные статьи{% endblock %}
+
+{% block content %}
+<body>
+{% for i in article %}
+<div class="container">
+    <h2>{{ i.title }}</h2>
+    <p>{{ i.content }}</p>
+</div>
+<hr>
+{% endfor %}
+</body>
+{% endblock %}

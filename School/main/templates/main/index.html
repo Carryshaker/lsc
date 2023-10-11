@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная странца{% endblock %}
+
+{% block content %}
+<header class="header">
+    <h2 class="white">Записаться на пробное занятие </h2>
+    <p class="white">Запишитесь на пробное занятие, чтобы оценить ваш уровень знаний! </p>
+    <form class="form">
+      <input type="telephone" class="form_input" placeholder="Телефон">
+      <br>
+      <input type="text" class="form_input" placeholder="Имя">
+      <br>
+      <textarea class="form_textarea" placeholder="Ваши пожелания по дате/времени занятия"></textarea>
+      <br>
+      <button class="form_button" type="button">Отправить</button>
+    </form>
+  </article>
+{% endblock %}
